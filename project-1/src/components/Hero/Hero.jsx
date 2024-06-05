@@ -1,28 +1,24 @@
 import React from "react";
+import Heading from "./Heading";
+import BrandImgs from "./BrandImg";
+import Btns from "./Btns";
 
 function Hero() {
   return (
     <main className="hero container">
       <div className="hero-content">
-        <h1>YOUR FEET DESERVES THE BEST</h1>
+        <Heading />
         <p>
           YOUR FEET DESERVE THE BEST AND WE'RE HERE TO HELP YOU WITH OUR
           SHOES.YOUR FEET DESERVE THE BEST AND WE'RE HERE TO HELP YOU WITH OUR
           SHOES.
         </p>
 
-        <div className="hero-btn">
-          <button>Shop Now</button>
-          <button className="secondary-btn">Category</button>
-        </div>
+        <Btns />
 
         <div className="shopping">
           <p>Also available on </p>
-
-          <div className="brand-img">
-            <img src="/images/amazon.png" alt="" />
-            <img src="/images/flipkart.png" alt="" />
-          </div>
+          <BrandImgs />
         </div>
       </div>
       <div className="hero-image">

@@ -1,0 +1,47 @@
+/* Hero */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 72px);
+}
+
+/* BrandImg */
+.brand-img {
+  display: flex;
+  gap: 16px;
+}
+
+/* Btns */
+.hero-btn {
+  display: flex;
+  gap: 40px;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: var(--grey);
+  border: 1px solid var(--grey);
+}
+
+/* Heading */
+.hero h1 {
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
