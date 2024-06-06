@@ -1,0 +1,20 @@
+.navigation {
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.navigation ul li a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+  font-weight: 500;
+}
