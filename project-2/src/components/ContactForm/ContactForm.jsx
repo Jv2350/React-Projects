@@ -3,11 +3,19 @@ import Buttons from "../Buttons/Buttons";
 import styles from "./ContactForm.module.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
+import { useState } from "react";
 
 const ContactForm = () => {
+  const [name, setName] = useState("Default: Jayesh");
+  const [email, setEmail] = useState("Default: jayesh@gmail.com");
+  const [text, setText] = useState("Default: Hello world");
+
   const onSubmit = (event) => {
     event.preventDefault();
     console.log(event);
+    setName(event.target[0].value);
+    setEmail(event.target[1].value);
+    setText(event.target[2].value);
   };
 
   return (
@@ -46,11 +54,12 @@ const ContactForm = () => {
           >
             <Buttons text="SUBMIT" icon={<HiMail fontSize="24px" />} />
           </div>
+          <div>{name + " " + email + " " + text}</div>
         </form>
       </div>
 
       <div className={styles.container_img}>
-        <img src="/public/images/contact.svg" alt="" />
+        <img src="/images/contact.svg" alt="" />
       </div>
     </section>
   );
