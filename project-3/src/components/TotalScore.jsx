@@ -24,4 +24,4 @@ const ScoreContainer = styled.div`
     font-size: 24px;
     font-weight: 500;
   }
-`
+`;
