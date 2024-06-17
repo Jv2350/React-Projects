@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-const RoleDice = () => {
+const RoleDice = ({ roleDice, currentDice }) => {
   return (
     <DiceContainer>
-      <div className="dice">
-        <img src="/images/dice/dice_1.png" alt="" />
+      <div className="dice" onClick={roleDice}>
+        <img src={`/images/dice/dice_${currentDice}.png`} alt="dice 1" />
       </div>
-      <p>Click on the dice to roll</p>
+      <p>Click on Dice to roll</p>
     </DiceContainer>
   );
 };
@@ -14,12 +14,16 @@ const RoleDice = () => {
 export default RoleDice;
 
 const DiceContainer = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  p{
-    font-size:24px;
+  .dice {
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 24px;
   }
 `;
