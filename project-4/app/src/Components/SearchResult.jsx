@@ -30,7 +30,7 @@ const SearchResult = ({ data }) => {
 export default SearchResult;
 
 const FoodCardContainer = styled.section`
-  height: calc(100vh - 210px);
+  min-height: calc(100vh - 210px);
   background-image: url(/bg.png);
   background-size: cover;
 `;
